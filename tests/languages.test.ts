@@ -14,6 +14,6 @@ test(`Get languages`, async () => {
 });
 
 test(`Post new language`, async () => {
-  const language = await postLanguage('en', 'english', 'en', 'english');
+  const language = await postLanguage('en', 'english');
   expect(language).toBeInstanceOf(Language);
 });
